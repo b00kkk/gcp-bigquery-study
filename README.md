@@ -63,3 +63,17 @@
 - 평균보다 긴 소요시간을 가진 대여 기록 상위 10건 조회
 
 </details>
+
+<details>
+<summary> 📅 Day 5 </summary>
+
+✅ 윈도우 함수(Window Function) 실습  
+- 순위 매기기, 누적 합계, 상위 퍼센트 구분 연습
+- `ROW_NUMBER()`, `SUM() OVER(...)`, `PERCENT_RANK()` 실전 활용
+
+🧪 주요 쿼리 요약:
+- 요일별(start_station_name) 대여량 1등 추출 (`ROW_NUMBER() OVER PARTITION`)
+- 종료 대여소(end_station_name)별 날짜 순 누적 대여 건수 (`SUM() OVER PARTITION ORDER`)
+- 소요시간(tripduration) 기준 상위 10% 대여 기록 추출 (`PERCENT_RANK()`)
+
+</details>
