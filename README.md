@@ -77,3 +77,17 @@
 - 소요시간(tripduration) 기준 상위 10% 대여 기록 추출 (`PERCENT_RANK()`)
 
 </details>
+
+<details>
+<summary> 📅 Day 6 </summary>
+
+✅ 다중 조건 집계 및 복합 분석 실습  
+- 요일/시간대 조합 분석, 조건부 집계, 시작↔종료 대여소 비교 등 실전 분석 강화  
+- `EXTRACT()`, `CASE WHEN`, `GROUP BY`, `JOIN`, 조건 필터링 조합 실습
+
+🧪 주요 쿼리 요약:
+- 요일 + 시간대별 대여 건수 집계 (`EXTRACT(DAYOFWEEK), HOUR`)
+- 출근/퇴근 시간대 조건부 집계 (`COUNT(CASE WHEN ...)`)
+- 시작과 종료 대여소가 같은 대여 기록 상위 10개 추출
+
+</details>
