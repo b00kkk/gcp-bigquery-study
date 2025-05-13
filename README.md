@@ -13,7 +13,6 @@
 - Public Dataset 연결 (citibike 데이터)
 - SQL 기본 SELECT + GROUP BY + ORDER BY 실습
 - GitHub에 쿼리 및 결과 정리
-
 </details>
 
 <details>
@@ -29,7 +28,6 @@
 - 2018년 2월 반납 대여소 상위 10개 조회
 - 월별 자전거 이용량 집계
 - 기온/강수량별 대여소 이용량 분석 (JOIN)
-
 </details>
 
 <details>
@@ -45,7 +43,6 @@
 - 2018년 3월 가장 많이 대여된 요일 구하기
 - 2018년 3월 자전거 시작 대여소 Top 5 조회
 - 평일 vs 주말 자전거 대여량 비교
-
 </details>
 
 <details>
@@ -61,7 +58,6 @@
 - 2018년 3월 가장 오래 이동한 기록 조회
 - 종료 대여소 이름에 'park'가 포함된 대여소 Top 5
 - 평균보다 긴 소요시간을 가진 대여 기록 상위 10건 조회
-
 </details>
 
 <details>
@@ -75,7 +71,6 @@
 - 요일별(start_station_name) 대여량 1등 추출 (`ROW_NUMBER() OVER PARTITION`)
 - 종료 대여소(end_station_name)별 날짜 순 누적 대여 건수 (`SUM() OVER PARTITION ORDER`)
 - 소요시간(tripduration) 기준 상위 10% 대여 기록 추출 (`PERCENT_RANK()`)
-
 </details>
 
 <details>
@@ -89,5 +84,17 @@
 - 요일 + 시간대별 대여 건수 집계 (`EXTRACT(DAYOFWEEK), HOUR`)
 - 출근/퇴근 시간대 조건부 집계 (`COUNT(CASE WHEN ...)`)
 - 시작과 종료 대여소가 같은 대여 기록 상위 10개 추출
+</details>
 
+<details>
+<summary> 📅 Day 7 </summary>
+
+✅ INFORMATION_SCHEMA 활용 및 실무 최적화  
+- 메타 데이터 테이블을 활용한 테이블 구조 및 파티션 분석 실습  
+- 스키마 확인, 테이블 생성 시간 정렬, 파티션 존재 여부 확인
+
+🧪 주요 쿼리 요약:
+- 테이블 컬럼 정보 확인 (`INFORMATION_SCHEMA.COLUMNS`)
+- 최근 생성된 테이블 5개 조회 (`INFORMATION_SCHEMA.TABLES`)
+- 파티션 존재 테이블 및 파티션 개수 확인 (`INFORMATION_SCHEMA.PARTITIONS`)
 </details>
